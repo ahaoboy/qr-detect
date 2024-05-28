@@ -1,0 +1,19 @@
+{
+  "name": "qr-detect-rs",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Recognize the QR code from the image",
+  "main": "index.js",
+  "scripts": {
+    "build:wasm": "wasm-pack build --release --target web --out-dir ./web",
+    "build:sync": "wasm-pack-sync ./web -d dist --name index",
+    "copy": "rm -rf ../qr-detect/src/wasm && cp ./dist ../qr-detect/src/wasm -r",
+    "build": "pnpm run build:wasm && pnpm run build:sync && pnpm run copy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "wasm-pack-sync": "^0.1.5"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "qr-detect",
+  "private": true,
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "pnpm run --parallel dev",
+    "build": "pnpm run -r build",
+    "format": "biome format --write  ./",
+    "test": "pnpm run --parallel test",
+    "test:run": "pnpm run --parallel test:run",
+    "clear": "rm -rf node_modules && pnpm -r exec rm -rf node_modules dist es5",
+    "clear-dist": "rm -rf dist es5 && pnpm -r exec rm -rf dist es5",
+    "release": "pnpm publish -r --access public",
+    "release-alpha": "pnpm publish -r --access public --tag alpha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@biomejs/biome": "^1.5.3",
+    "@types/node": "^20.11.17",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.2"
+  }
+}
