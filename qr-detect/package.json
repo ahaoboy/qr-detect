@@ -1,8 +1,9 @@
 {
   "name": "qr-detect",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Recognize the QR code from the image",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
     "dev": "tsc -w",
