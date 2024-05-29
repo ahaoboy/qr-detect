@@ -17,6 +17,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "qr-detect": "workspace:*",
     "wasm-pack-sync": "^0.1.5"
   }
 }
