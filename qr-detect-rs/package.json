@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "description": "Recognize the QR code from the image",
   "main": "index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build:wasm": "wasm-pack build --release --target web --out-dir ./web",
     "build:sync": "wasm-pack-sync ./web -d dist --name index",
