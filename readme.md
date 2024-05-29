@@ -1,4 +1,5 @@
 Recognize the QR code from the image
+[qr2clipboard](https://qr2clipboard.vercel.app/)
 
 ```ts
   const buf = new Uint8Array(readFileSync('./assets/a.webp'));
